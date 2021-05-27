@@ -327,7 +327,42 @@ span.span-hl {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  h1.page-h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .page-preheader {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .page-hero-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .hero-flex-left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 64px;
+    width: 100%;
+    padding-right: 0px;
+  }
 
+  .hero-flex-right {
+    width: 50%;
+  }
+
+  .hero-img {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .nav-menu {
+    display: none;
+  }
 }
 
 /* Mobile Portrait */
