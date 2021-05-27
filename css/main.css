@@ -9,38 +9,67 @@
   --bg-color: #292929;
   --hl-color: #2EC8FD;
   --text-color: #F4F4F4;
+  --line-color: #3E3E3E;
+  --block-bg-color: #4D4D4D;
+  --block-bd-color: #555555;
+  --block-dark-bg: #303030;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--bg-color);
+  background: var(--hl-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background: var(--hl-color);
 }
 
 body {
-  font-family: -apple-system, sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system, 'IBM Plex Sans', sans-serif;
+  font-family: -apple-system, 'Helvetica Neue', 'IBM Plex Sans', sans-serif;
   font-weight: bold;
 }
 
-h1.regular-h1 {
+img {
+  max-width: 100%;
+}
+
+h2.regular-h2 {
   margin-top: 0px;
   margin-bottom: 8px;
   font-size: 32px;
   line-height: 40px;
 }
 
-main {
-  padding-top: 96px;
+.page-preheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+h1.page-h1 {
+  text-align: center;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  font-size: 56px;
+  line-height: 64px;
+  padding: 16px 24px 16px 24px;
+  transform: rotateZ(5deg);
 }
 
 .sub-text {
   font-size: 16px;
   line-height: 24px;
-}
-
-img {
-  max-width: 100%;
 }
 
 .navbar {
