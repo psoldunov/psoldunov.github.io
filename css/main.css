@@ -260,18 +260,20 @@ span.span-hl {
 }
 
 .dog-tab-link {
-  color: var(--text-color);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--text-color);
+  color: var(--bg-color);
+  background-color: var(--text-color);
+  font-weight: bold;
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: ease;
+  padding: 8px 14px 8px 14px;
   margin: 0px 8px 0px 8px;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
 .dog-tab-link.active-link, .dog-tab-link:hover {
-  color: var(--hl-color);
-  border-bottom-color: var(--hl-color);
+  background-color: var(--hl-color);
 }
 
 .dog-tabs-wrap {
