@@ -1,15 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
- * {
+/* * {
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale
+} */
+
+:root {
+  --bg-color: #292929;
+  --hl-color: #2EC8FD;
+  --text-color: #F4F4F4;
 }
 
 body {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: -apple-system, 'IBM Plex Sans', sans-serif;
   font-weight: bold;
+}
+
+h1.regular-h1 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+main {
+  padding-top: 96px;
+}
+
+.sub-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  height: 96px;
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.navbar-container {
+  height: 100%;
+}
+
+.navbar-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0 24px 0 24px;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+.nav-link:hover {
+  color: var(--hl-color);
+}
+
+.logo-link {
+  width: 96px;
+  height: 96px;
+}
+
+.page-hero-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-flex-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding-right: 64px;
+}
+
+.hero-flex-right {
+  width: 30%;
+}
+
+.hero-img {
+  border-radius: 50%;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 375px) {
+
+  .navbar {
+    height: 64px;
+  }
+
+  .main-container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .logo-link {
+    width: 64px;
+    height: 64px;
+  }
+
 }
